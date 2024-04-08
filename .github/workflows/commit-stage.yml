@@ -13,6 +13,8 @@ jobs:
     permissions:
       contents: read
       security-events: write
+      # only required for workflows in private repositories
+      actions: read
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
@@ -55,8 +57,6 @@ jobs:
       contents: read
       packages: write
       security-events: write
-      # only required for workflows in private repositories
-      actions: read
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
