@@ -46,5 +46,4 @@ jobs:
           client-payload: '{
             "app_image": "${{ env.REGISTRY }}/${{ env.OWNER }}/${{ env.APP_REPO }}",
             "app_name": "${{ env.APP_REPO }}",
-            "app_version": "${{ env.VERSION }}"
-          }'
+            "app_version": "${{ env.VERSION }}" }'
